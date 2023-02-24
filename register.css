@@ -10,7 +10,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #4070f4;
+    background: linear-gradient(90deg, #2cffe6, #7EFFB2);
+    background-size: 400% 400%;
+    animation:  anim 2.5s infinite ease-in-out;
+}
+
+@keyframes anim{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .container{

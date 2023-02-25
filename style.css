@@ -7,7 +7,24 @@
     min-height: 700px;
 }
 
+.nav-item::after {
+     content: '';
+     display: block;
+     width: 0px;
+     height: 2px;
+     background: #fec400;
+     transition: 0.4s
+ }
 
+ .nav-item:hover::after {
+     width: 100%
+ }
+
+
+.nav-link {
+    padding: 10px 5px;
+    transition: 0.2s
+}
 
 #home-section .home-inner{
     padding-top: 150px;

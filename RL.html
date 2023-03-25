@@ -16,18 +16,18 @@
 <section class="background-radial-gradient overflow-hidden">
     <style>
       .background-radial-gradient {
-        background-color: hsl(218, 41%, 15%);
+        background-color: hsl(0, 0%, 0%);
         background-image: radial-gradient(650px circle at 0% 0%,
-            hsl(218, 41%, 35%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
+            hsl(0, 0%, 45.9%) 15%,
+            hsl(0, 0%, 38%) 35%,
+            hsl(0, 0%, 16%) 75%,
+            hsl(0, 0%, 12.9%) 80%,
             transparent 100%),
           radial-gradient(1250px circle at 100% 100%,
-            hsl(218, 41%, 45%) 15%,
-            hsl(218, 41%, 30%) 35%,
-            hsl(218, 41%, 20%) 75%,
-            hsl(218, 41%, 19%) 80%,
+            hsl(0, 0%, 45.9%) 15%,
+            hsl(0, 0%, 38%) 35%,
+            hsl(0, 0%, 22%) 75%,
+            hsl(0, 0%, 12.9%) 80%,
             transparent 100%);
             min-height: 975px;
       }
@@ -43,7 +43,7 @@
   
       #radius-shape-2 {
         border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-        bottom: -190px;
+        bottom: -170px;
         right: -110px;
         width: 300px;
         height: 300px;
@@ -54,7 +54,7 @@
       
   
       .bg-glass {
-        background-color: hsla(0, 0%, 100%, 0.9) !important;
+        background-color: hsla(0, 0%, 100%, 0.832) !important;
         backdrop-filter: saturate(200%) blur(25px);
       }
     </style>
@@ -78,8 +78,18 @@
           <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
           <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
   
-          <div class="card bg-glass mt-5">
-            <div class="card-body px-4 py-5 px-md-5">
+          <div class=" card bg-glass">
+            <div class="navbar-brand title mt-3 ">
+              <style>
+
+                .title{
+                  font-size: 25px;
+                  font-weight: 500;
+                  position: relative;
+                }
+
+              </style>Registration</div>
+            <div class="card-body px-4 py-4 px-md-5">
                 <form>
                     <div class="row mb-3">
                       <div class="col mb-auto">

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>CureWish</title>
+    <link rel="icon" type="image/x-icon" href="/images/curewish.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Section: Design Block -->
+<section class="background-radial-gradient overflow-hidden">
+    <style>
+      .background-radial-gradient {
+        background-color: hsl(0, 0%, 0%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+            hsl(0, 0%, 45.9%) 15%,
+            hsl(0, 0%, 38%) 35%,
+            hsl(0, 0%, 16%) 75%,
+            hsl(0, 0%, 12.9%) 80%,
+            transparent 100%),
+          radial-gradient(1250px circle at 100% 100%,
+            hsl(0, 0%, 45.9%) 15%,
+            hsl(0, 0%, 38%) 35%,
+            hsl(0, 0%, 16%) 75%,
+            hsl(0, 0%, 12.9%) 80%,
+            transparent 100%);
+            min-height: 975px;
+      }
+  
+      #radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: -10px;
+        left: -120px;
+        background: radial-gradient(rgb(170, 255, 0), rgba(133, 194, 12, 0.56));
+        overflow: hidden;
+      }
+  
+      #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -170px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(rgb(170, 255, 0), rgb(133, 194, 12, 0.56));
+        overflow: hidden;
+      }
+
+      
+  
+      .bg-glass {
+        background-color: hsla(0, 0%, 100%, 0.832) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+      }
+    </style>
+  
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10 ">
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%);">
+            CureWish<br />
+            <span style="color: rgb(170, 255, 0)">for your health</span>
+          </h1>
+          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Temporibus, expedita iusto veniam atque, magni tempora mollitia
+            dolorum consequatur nulla, neque debitis eos reprehenderit quasi
+            ab ipsum nisi dolorem modi. Quos?
+          </p>
+        </div>
+  
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+  
+          <div class=" card bg-glass">
+            <ul class="nav nav-pills nav-justified px-5 py-4 mb-1" id="pills-tab" role="tablist">
+              <!--login-->
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
+              </li>
+              <!--register-->
+              <li class="nav-item">
+                <a class="nav-link" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
+              </li>
+            </ul>
+          
+            <!--login-->
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                <form>
+
+                <!-- Email input -->
+                <div class="form-outline px-5 mb-4">
+                  <span class="details">
+                    <style>
+                      span.details{
+                        display: block;
+                        font-weight: 500;
+                        text-align: left;
+                      }
+                    </style>
+                    Email or Username</span>
+                  <input type="email" id="loginName" class="form-control" />
+                </div>
+          
+                <!-- Password input -->
+                <div class="form-outline px-5 mb-4">
+                  <span class="details">
+                    <style>
+                      span.details{
+                        display: block;
+                        font-weight: 500;
+                        text-align: left;
+                      }
+                    </style>
+                    Password</span>
+                  <input type="password" id="loginPassword" class="form-control" />
+                </div>
+          
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+                <div class="text-center mb-3">
+                  <p>Sign in with:</p>
+          
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+                </div>
+          
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>Not a member? <a href="#!">Register</a></p>
+                </div>
+              </form>
+            </div>
+          
+            <!--register-->
+          
+            <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+              <form>
+          
+                <div class="card-body px-4 py-4 px-md-5">
+                  <form>
+                      <div class="row mb-3">
+                        <div class="col mb-auto">
+                          <span class="details">
+                            <style>
+                              span.details{
+                                display: block;
+                                font-weight: 500;
+                                text-align: left;
+                              }
+                            </style>
+                            Full Name</span>
+                          <input type="text" class="form-control" placeholder="Enter full name">
+                        </div>
+                        <div class="col">
+                          <span class="details">
+                            <style>
+                              span.details{
+                                display: block;
+                                font-weight: 500;
+                                text-align: left;
+                              }
+                            </style>
+                            Username</span>
+                          <input type="text" class="form-control" placeholder="Enter username">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <span class="details">
+                            <style>
+                              span.details{
+                                display: block;
+                                font-weight: 500;
+                                text-align: left;
+                              }
+                            </style>
+                            Age</span>
+                          <input type="number" class="form-control" placeholder="Enter age">
+                        </div>
+                        <div class="col">
+                          <span class="details">
+                            <style>
+                              span.details{
+                                display: block;
+                                font-weight: 500;
+                                text-align: left;
+                              }
+                            </style>
+                            Email</span>
+                          <input type="email" class="form-control" placeholder="Enter email id">
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <span class="details">
+                            <style>
+                              span.details{
+                                display: block;
+                                font-weight: 500;
+                                text-align: left;
+                              }
+                            </style>
+                            Password</span>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+                        </div>
+                        <div class="col">
+                          <span class="details">
+                            <style>
+                              span.details{
+                                display: block;
+                                font-weight: 500;
+                                text-align: left;
+                              }
+                            </style>
+                            Confirm Password</span>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm password">
+                        </div>
+                      </div>
+  
+    
+                  <!-- Submit button -->
+                  <button type="submit" class="btn btn-success btn-block mt-4 mb-4">
+                    Sign up
+                  </button>
+              </form>
+            </div>
+          </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/201b806b33.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>

@@ -54,7 +54,7 @@
       
   
       .bg-glass {
-        background-color: hsla(0, 0%, 100%, 0.832) !important;
+        background-color: hsla(0, 0%, 71%, 0.619) !important;
         backdrop-filter: saturate(200%) blur(25px);
       }
     </style>
@@ -67,10 +67,7 @@
             <span style="color: rgb(170, 255, 0)">for your health</span>
           </h1>
           <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Temporibus, expedita iusto veniam atque, magni tempora mollitia
-            dolorum consequatur nulla, neque debitis eos reprehenderit quasi
-            ab ipsum nisi dolorem modi. Quos?
+            Real prevention is not waiting for bad things to happen, but rather stopping things from happening in the first place. Cure Wish provides guidance on predicting the health of the disease and provides a precautionary approach.
           </p>
         </div>
   
@@ -82,64 +79,125 @@
             <ul class="nav nav-pills nav-justified px-5 py-4 mb-1" id="pills-tab" role="tablist">
               <!--login-->
               <li class="nav-item">
-                <a class="nav-link active" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
+                <a class="nav-link active text-white" id="pills-login-tab" data-toggle="pill" href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Login</a>
               </li>
               <!--register-->
               <li class="nav-item">
-                <a class="nav-link" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
+                <a class="nav-link text-white" id="pills-register-tab" data-toggle="pill" href="#pills-register" role="tab" aria-controls="pills-register" aria-selected="false">Register</a>
               </li>
             </ul>
           
             <!--login-->
-            <div class="tab-content">
-              <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-                <form>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                  <form>
+                    <div class="row mb-3">
+                      <div class="col mb-auto">
+                        <span class="details">
+                          <style>
+                            span.details{
+                              display: block;
+                              font-weight: 500;
+                              text-align: left;
+                            }
+                          </style>
+                          Full Name</span>
+                        <input type="text" class="form-control" placeholder="Enter full name">
+                      </div>
+                      <div class="col">
+                        <span class="details">
+                          <style>
+                            span.details{
+                              display: block;
+                              font-weight: 500;
+                              text-align: left;
+                            }
+                          </style>
+                          Username</span>
+                        <input type="text" class="form-control" placeholder="Enter username">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col">
+                        <span class="details">
+                          <style>
+                            span.details{
+                              display: block;
+                              font-weight: 500;
+                              text-align: left;
+                            }
+                          </style>
+                          Age</span>
+                        <input type="number" class="form-control" placeholder="Enter age">
+                      </div>
+                      <div class="col">
+                        <span class="details">
+                          <style>
+                            span.details{
+                              display: block;
+                              font-weight: 500;
+                              text-align: left;
+                            }
+                          </style>
+                          Email</span>
+                        <input type="email" class="form-control" placeholder="Enter email id">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col">
+                        <span class="details">
+                          <style>
+                            span.details{
+                              display: block;
+                              font-weight: 500;
+                              text-align: left;
+                            }
+                          </style>
+                          Password</span>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
+                      </div>
+                      <div class="col">
+                        <span class="details">
+                          <style>
+                            span.details{
+                              display: block;
+                              font-weight: 500;
+                              text-align: left;
+                            }
+                          </style>
+                          Confirm Password</span>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm password">
+                      </div>
+                    </div>
 
-                <!-- Email input -->
-                <div class="form-outline px-5 mb-4">
-                  <span class="details">
-                    <style>
-                      span.details{
-                        display: block;
-                        font-weight: 500;
-                        text-align: left;
-                      }
-                    </style>
-                    Email or Username</span>
-                  <input type="email" id="loginName" class="form-control" />
-                </div>
-          
-                <!-- Password input -->
-                <div class="form-outline px-5 mb-4">
-                  <span class="details">
-                    <style>
-                      span.details{
-                        display: block;
-                        font-weight: 500;
-                        text-align: left;
-                      }
-                    </style>
-                    Password</span>
-                  <input type="password" id="loginPassword" class="form-control" />
-                </div>
-          
+                    
+  
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
-
-                <div class="text-center mb-3">
-                  <p>Sign in with:</p>
-          
-                  <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-google"></i>
-                  </button>
-                </div>
-          
+                <button type="submit" class="btn btn-success btn-block mb-4">
+                  Sign up
+                </button>
+  
                 <!-- Register buttons -->
                 <div class="text-center">
-                  <p>Not a member? <a href="#!">Register</a></p>
+                  <p>or sign up with:</p>
+                  <button type="button" class="btn btn-link btn-floating rounded-circle mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating rounded-circle mx-1">
+                    <i class="fab fa-google"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating rounded-circle mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating rounded-circle mx-1">
+                    <i class="fab fa-github"></i>
+                  </button>
                 </div>
               </form>
-            </div>
+              </div>  
           
             <!--register-->
           
@@ -150,7 +208,7 @@
                   <form>
                       <div class="row mb-3">
                         <div class="col mb-auto">
-                          <span class="details">
+                          <span class="details text-white">
                             <style>
                               span.details{
                                 display: block;
@@ -162,7 +220,7 @@
                           <input type="text" class="form-control" placeholder="Enter full name">
                         </div>
                         <div class="col">
-                          <span class="details">
+                          <span class="details text-white">
                             <style>
                               span.details{
                                 display: block;
@@ -176,7 +234,7 @@
                       </div>
                       <div class="row mb-3">
                         <div class="col">
-                          <span class="details">
+                          <span class="details text-white">
                             <style>
                               span.details{
                                 display: block;
@@ -188,7 +246,7 @@
                           <input type="number" class="form-control" placeholder="Enter age">
                         </div>
                         <div class="col">
-                          <span class="details">
+                          <span class="details text-white">
                             <style>
                               span.details{
                                 display: block;
@@ -202,7 +260,7 @@
                       </div>
                       <div class="row mb-3">
                         <div class="col">
-                          <span class="details">
+                          <span class="details text-white">
                             <style>
                               span.details{
                                 display: block;
@@ -214,7 +272,7 @@
                           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter password">
                         </div>
                         <div class="col">
-                          <span class="details">
+                          <span class="details text-white">
                             <style>
                               span.details{
                                 display: block;

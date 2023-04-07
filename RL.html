@@ -62,7 +62,7 @@
     </style>
 
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
-      <div class="row gx-lg-5 align-items-center mb-5 mt-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
         <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10 ">
           <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%);">
             CureWish<br />
@@ -206,7 +206,7 @@
                             </style>
                             Age
                           </span>
-                          <input type="number" class="form-control" placeholder="Enter your age" required>
+                          <input type="number" class="form-control" placeholder="Enter age" required>
                         </div>
                         <div class="col">
                           <span class="details text-white">
@@ -234,8 +234,8 @@
                             </style>
                             Password
                           </span>
-                          <input type="password" class="form-control" id="password"
-                            placeholder="Enter your password" required>
+                          <input type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="Enter password" required>
                         </div>
                         <div class="col">
                           <span class="details text-white">
@@ -248,46 +248,16 @@
                             </style>
                             Confirm Password
                           </span>
-                          <input type="password" class="form-control" id="confirm_password"
+                          <input type="password" class="form-control" id="exampleInputPassword1"
                             placeholder="Confirm password" required>
                         </div>
                       </div>
 
-                      <div class="row ml-1 mt-4">
-                          <label class="mr-4 text-white">Gender</label>
-                          <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                            <label class="custom-control-label text-white" for="customRadioInline1">Male</label>
-                          </div>
-                          <div class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                            <label class="custom-control-label text-white" for="customRadioInline2">Female</label>
-                          </div>
-                      </div>
-
 
                       <!-- Submit button -->
-                      <button type="submit" class="btn btn-success btn-block mt-3 mb-4">
+                      <button type="submit" class="btn btn-success btn-block mt-4 mb-4">
                         Sign up
                       </button>
-
-                      <!-- Password validation -->
-                      <script>
-                        var password = document.getElementById("password"), 
-                        confirm_password = document.getElementById("confirm_password");
-                        
-                        function validatePassword(){
-                          if(password.value != confirm_password.value) {
-                            confirm_password.setCustomValidity("Passwords Don't Match");
-                          } 
-                          else {
-                            confirm_password.setCustomValidity('');
-                          }
-                        }
-                        password.onchange = validatePassword;
-                        confirm_password.onkeyup = validatePassword;
-                      </script>
-
                     </form>
                   </div>
                 </form>

@@ -24,3 +24,7 @@ ranjeeth
       document.getElementById("result").innerHTML = "The sum of " + num1 + " and " + num2 + " is " + sum;
     }
   </script>
+
+<!--api-->
+AIzaSyBhbdClU78NH2Zb0bOGN5_PkTRU2VakV-c
+

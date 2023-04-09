@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nearby Hospitals in Mumbai</title>
+    <style>
+      #map {
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nearby Hospitals in Mumbai</h1>
+    <div id="map"></div>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
+    <script>
+      mapboxgl.accessToken = 'AIzaSyAHqVF9w_CEajSjwyB_tfobEzIM2_pOFAY';
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var userLocation = [position.coords.longitude, position.coords.latitude];
+        var map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: userLocation,
+          zoom: 13
+        });
+        var marker = new mapboxgl.Marker()
+          .setLngLat(userLocation)
+          .addTo(map);
+        map.on('load', function() {
+          map.addSource('hospitals', {
+            type: 'geojson',
+            data: 'https://api.mapbox.com/geocoding/v5/mapbox.places/hospital.json?proximity=' + userLocation[0] + ',' + userLocation[1] + '&access_token=' + mapboxgl.accessToken
+          });
+          map.addLayer({
+            id: 'hospitals',
+            type: 'symbol',
+            source: 'hospitals',
+            layout: {
+              'icon-image': 'hospital-15',
+              'icon-allow-overlap': true,
+              'text-field': '{name}',
+              'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+              'text-offset': [0, 0.6],
+              'text-anchor': 'top'
+            }
+          });
+        });
+        var nav = new mapboxgl.NavigationControl();
+        map.addControl(nav, 'top-right');
+        var miniMap = new mapboxgl.Map({
+          container: 'minimap',
+          style: 'mapbox://styles/mapbox/streets-v11',
+          center: userLocation,
+          zoom: 12,
+          interactive: false
+        });
+        new mapboxgl.Marker()
+          .setLngLat(userLocation)
+          .addTo(miniMap);
+      });
+    </script>
+    <div id="minimap" style="position: absolute; bottom: 0; right: 0; width: 150px; height: 150px; z-index: 1;"></div>
+  </body>
+</html>

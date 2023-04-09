@@ -34,7 +34,7 @@
               <a class="nav-link text-white" href="/index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#diet">Diet & Nutrition</a>
+              <a class="nav-link text-white" href="/index.html#diet">Diet & Nutrition</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="/index.html#Prognosis">Prognosis</a>
@@ -77,7 +77,8 @@
             hsl(0, 0%, 16%) 75%,
             hsl(0, 0%, 12.9%) 80%,
             transparent 100%);">
-          <div class="card-header py-4 px-4 bg-success text-center text-white" style="font-size: 39px;">
+          <div class="card-header py-4 px-4 text-center text-white"
+            style="font-size: 39px; background-color: yellowgreen ;">
             Testing your Blood pressure
           </div>
 
@@ -85,55 +86,72 @@
           <form class="mt-3 mb-3">
 
             <div class="card-body">
-              <!--gender-->
-              <div class="row justify-content-center">
-                <label class="mr-3 text-white">Gender</label>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                  <label class="custom-control-label text-white" for="customRadioInline1">Male</label>
-                </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                  <label class="custom-control-label text-white" for="customRadioInline2">Female</label>
-                </div>
-              </div>
+
               <!--age-->
-              <div class="form-group text-white text-white px-4">
+              <div class="form-group text-white px-4">
                 <label class="">Enter your Age</label>
-                <input type="number" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter your age" required>
+                <input type="number" class="form-control" id="" aria-describedby="emailHelp"
+                  placeholder="Enter your age" required>
               </div>
+              <!--Systolic ( Upper number )-->
               <div class="form-group text-white px-4">
                 <label class="" for="exampleInputEmail1">Systolic ( Upper number )</label>
-                <input type="number" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter your Systolic number" required>
+                <input type="number" class="form-control" id="" aria-describedby="emailHelp"
+                  placeholder="Enter your Systolic number" required>
               </div>
+              <!--Diastolic ( Lower number )-->
               <div class="form-group text-white px-4 mb-4">
                 <label class="" for="exampleInputEmail1">Diastolic ( Lower number )</label>
-                <input type="number" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter your Diastolic number" required>
+                <input type="number" class="form-control" id="" aria-describedby="emailHelp"
+                  placeholder="Enter your Diastolic number" required>
               </div>
-            <!--submit-->
-              <a href="" type="Submit" class="btn btn-outline-success ml-4 mb-3 px-4">Submit</a>
-              <a href="" type="Reset" class="btn btn-outline-warning ml-4 mb-3 px-4">Clear all</a>
+              <!--gender-->
+              <label class="ml-4 mb-3 mr-3 text-white">Gender</label>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label text-white" for="customRadioInline1">Male</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label text-white" for="customRadioInline2">Female</label>
+              </div>
+
+
+              <!--submit-->
+              <div class="row ml-4">
+                <button type="submit" class="btn btn-outline-success mb-2 mr-4 px-4"><a href="" class="text-white"
+                    style="text-decoration: none;">Submit</a></button>
+              <!--clear-->
+                <button type="reset" class="btn btn-outline-warning mb-2 px-4"><a href="" class="text-white"
+                    style="text-decoration: none;">Clear all</a></button>
+              </div>
+              <!--output-->
+              <div id="result" class="ml-4 mt-3 rounded d-inline-flex text-dark bg-white ml-4 px-4 "
+                style="font-size: 28px;">
+                The Results will be show here
+              </div>
+
             </div>
 
-            <!--output-->
-            <div id="result" class=" ml-4 px-4">
-
-            </div>
           </form>
-    
+
           <div id="accordion">
-          <div class="card-header bg-success" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn text-white border-white" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none;">
-                How to measure your SpO2?
-              </button>
-            </h5>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body text-white">Ideally the fingers should be warm and any nail varnish removed. It is best to use either the index or middle finger. It is helpful to sit still for 5 minutes before checking, and to remain still with the pulse oximeter at heart level until the reading appears stable
+            <div class="card-header" id="headingOne" style=" background-color: yellowgreen ;">
+              <h5 class="mb-0">
+                <button class="btn btn-outline-dark text-white border-white" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                  style="text-decoration: none;">
+                  How to measure your SpO2?
+                </button>
+              </h5>
             </div>
-          </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body text-white">Ideally the fingers should be warm and any nail varnish removed. It is
+                best to use either the index or middle finger. It is helpful to sit still for 5 minutes before checking,
+                and to remain still with the pulse oximeter at heart level until the reading appears stable
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -141,9 +159,10 @@
   </section>
 
 
-  
 
-  
+
+
+
 
 
 
@@ -185,7 +204,7 @@
               <a class="text-white">Thyroid testing</a>
             </p>
           </div>
-          <hr class="w-100 clearfix d-md-none"/>
+          <hr class="w-100 clearfix d-md-none" />
 
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>

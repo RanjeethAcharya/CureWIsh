@@ -77,9 +77,9 @@
             hsl(0, 0%, 16%) 75%,
             hsl(0, 0%, 12.9%) 80%,
             transparent 100%);">
-          <div class="card-header py-4 px-4  text-center text-white"
-            style=" background-color: yellowgreen ;font-size: 39px;">
-            Test your Blood Oxygen ( SpO<sub>2</sub> )
+          <div class="card-header py-4 px-4 text-center text-white"
+            style="font-size: 39px; background-color: yellowgreen ;">
+            Test your Cholestroel level
           </div>
 
           <!--form-->
@@ -88,30 +88,23 @@
             <div class="card-body">
 
               <!--age-->
-              <div class="form-group text-white text-white px-4">
+              <div class="form-group text-white px-4">
                 <label class="">Enter your Age</label>
                 <input type="number" class="form-control" id="" aria-describedby="emailHelp"
-                  placeholder="Enter your age">
+                  placeholder="Enter your age" required>
               </div>
-              <div class="form-group text-white px-4 mb-4">
-                <label class="" for="exampleInputEmail1">Enter Blood Oxygen level ( SpO<sub>2</sub> )</label>
+              <!--Total cholestroel-->
+              <div class="form-group text-white px-4">
+                <label class="" for="exampleInputEmail1">Enter Total cholestroel</label>
                 <input type="number" class="form-control" id="" aria-describedby="emailHelp"
-                  placeholder="Enter your SpO2 number">
+                  placeholder="Enter your Systolic number" required>
+              </div>
+              <div class="form-group text-white px-4">
+                <label class="" for="exampleInputEmail1">Enter HDL ( High-Density-Lipoprotein ) cholestroel</label>
+                <input type="number" class="form-control" id="" aria-describedby="emailHelp"
+                  placeholder="Enter your Systolic number" required>
               </div>
 
-
-              <!--gender-->
-              <label class="ml-4 mb-3 mr-3 text-white">Gender</label>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                <label class="custom-control-label text-white" for="customRadioInline1">Male</label>
-              </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                <label class="custom-control-label text-white" for="customRadioInline2">Female</label>
-              </div>
-
-              
               <!--submit-->
               <div class="row ml-4">
                 <button type="submit" class="btn btn-outline-success mb-2 mr-4 px-4"><a href="" class="text-white"
@@ -127,6 +120,7 @@
               </div>
 
             </div>
+
           </form>
 
           <div id="accordion">
@@ -135,7 +129,7 @@
                 <button class="btn btn-outline-dark text-white border-white" data-toggle="collapse"
                   data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
                   style="text-decoration: none;">
-                  How to measure your SpO2?
+                  How to measure your Cholestroel level ?
                 </button>
               </h5>
             </div>
@@ -151,6 +145,7 @@
       </div>
     </div>
   </section>
+
 
 
 
